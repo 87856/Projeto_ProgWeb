@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drones",
+  "info": {
+    "singularName": "drone",
+    "pluralName": "drones",
+    "displayName": "Drone",
+    "description": "Catalogo de drones do site"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "preco": {
+      "type": "integer"
+    },
+    "autonomia": {
+      "type": "integer"
+    },
+    "alcance": {
+      "type": "integer"
+    },
+    "velocidade": {
+      "type": "integer"
+    },
+    "peso": {
+      "type": "integer"
+    },
+    "camara": {
+      "type": "string"
+    },
+    "imagem": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "drones"
+    },
+    "zona_de_voos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::zona-voo.zona-voo",
+      "inversedBy": "drones"
+    }
+  }
+}

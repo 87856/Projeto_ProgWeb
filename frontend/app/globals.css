@@ -1,0 +1,215 @@
+
+:root {
+  --dz-fundo:        #0a0e1a;
+  --dz-superficie:   #121a2e;
+  --dz-superficie-2: #0e1626;
+  --dz-borda:        #1e2a44;
+  --dz-azul:         #3b82f6;
+  --dz-ciano:        #22d3ee;
+  --dz-texto:        #e6edf7;
+  --dz-texto-fraco:  #94a3b8;
+}
+
+html, body {
+  background-color: var(--dz-fundo);
+  color: var(--dz-texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* marca o site inteiro como sendo tema escuro para o Bootstrap */
+[data-bs-theme="dark"], body {
+  background-color: var(--dz-fundo) !important;
+  color: var(--dz-texto) !important;
+}
+
+/* Navbar */
+.dz-navbar {
+  background-color: var(--dz-superficie-2) !important;
+  border-bottom: 1px solid var(--dz-borda);
+}
+.dz-navbar .navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--dz-texto) !important;
+}
+.dz-navbar .navbar-brand span {
+  color: var(--dz-azul);
+}
+.dz-navbar .nav-link {
+  color: var(--dz-texto-fraco) !important;
+  font-weight: 600;
+  padding: 8px 14px !important;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+}
+.dz-navbar .nav-link:hover {
+  color: var(--dz-texto) !important;
+  background-color: var(--dz-superficie);
+}
+.dz-navbar .nav-link.active {
+  background-color: var(--dz-azul) !important;
+  color: #fff !important;
+}
+
+/* Cartões */
+.dz-card {
+  background-color: var(--dz-superficie);
+  border: 1px solid var(--dz-borda);
+  border-radius: 16px;
+  color: var(--dz-texto);
+  transition: transform 0.2s, border-color 0.2s;
+  height: 100%;
+}
+.dz-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--dz-azul);
+}
+.dz-etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--dz-azul);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+.dz-preco {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--dz-ciano);
+}
+
+/* Botões */
+.btn-dz-primary {
+  background-color: var(--dz-azul);
+  border-color: var(--dz-azul);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-dz-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-2px);
+}
+.btn-dz-outline {
+  background-color: transparent;
+  border: 1px solid var(--dz-borda);
+  color: var(--dz-texto);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Tipografia */
+.dz-titulo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.dz-titulo span {
+  color: var(--dz-azul);
+}
+.dz-subtitulo {
+  color: var(--dz-texto-fraco);
+  margin-bottom: 1.5rem;
+}
+.dz-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/* Tabela */
+.dz-table {
+  background-color: var(--dz-superficie);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.dz-table thead th {
+  background-color: var(--dz-superficie-2) !important;
+  color: var(--dz-texto) !important;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Zona mapa HUD */
+.dz-hud {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  z-index: 10;
+  background: rgba(10, 14, 26, 0.88);
+  border: 1px solid var(--dz-borda);
+  border-radius: 8px;
+  padding: 10px 14px;
+  min-width: 220px;
+  backdrop-filter: blur(4px);
+  font-size: 0.85rem;
+}
+.dz-hud-linha {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+.dz-hud-label {
+  color: var(--dz-texto-fraco);
+  font-weight: 600;
+}
+.dz-alerta {
+  display: none;
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.dz-alerta.show {
+  display: block;
+}
+
+/* Footer */
+.dz-footer {
+  border-top: 1px solid var(--dz-borda);
+  padding: 30px 0;
+  margin-top: 40px;
+  color: var(--dz-texto-fraco);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Formulários */
+.form-control, .form-select {
+  background-color: var(--dz-superficie-2) !important;
+  border-color: var(--dz-borda) !important;
+  color: var(--dz-texto) !important;
+}
+.form-control:focus, .form-select:focus {
+  background-color: var(--dz-superficie-2) !important;
+  border-color: var(--dz-azul) !important;
+  color: var(--dz-texto) !important;
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25) !important;
+}
+.form-label {
+  color: var(--dz-texto);
+  font-weight: 600;
+}
+
+/* Badges de tipo de zona */
+.dz-tipo-permitida { background-color: #22c55e !important; color: #052e16 !important; font-weight: 700; }
+.dz-tipo-restrita  { background-color: #f59e0b !important; color: #422006 !important; font-weight: 700; }
+.dz-tipo-proibida  { background-color: #ef4444 !important; color: #450a0a !important; font-weight: 700; }

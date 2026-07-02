@@ -1,0 +1,106 @@
+
+> dronezone-frontend@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.0.3
+   - Local:        http://localhost:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1091ms (241 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s (999 modules)
+ GET / 200 in 5516ms
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 5s (1067 modules)
+ GET /catalogo 200 in 5205ms
+ ✓ Compiled /comparacao in 312ms (1078 modules)
+ GET /comparacao 200 in 444ms
+ ✓ Compiled /sobre in 256ms (1083 modules)
+ GET /sobre 200 in 391ms
+ ✓ Compiled /contacto in 315ms (1094 modules)
+ GET /contacto 200 in 442ms
+ ○ Compiling /mapa ...
+ ✓ Compiled /mapa in 10.3s (5280 modules)
+ GET /mapa 200 in 10628ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 575ms (5287 modules)
+ GET /login 200 in 788ms
+ ✓ Compiled /register in 502ms (5294 modules)
+ GET /register 200 in 652ms
+ GET /mapa 200 in 74ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /api/auth/[...nextauth] in 2.2s (5207 modules)
+ ✓ Compiled in 481ms (2647 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 4022ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 4127ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /mapa 200 in 52ms
+ GET /api/auth/session 200 in 3062ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 21ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 13ms
+ GET /api/auth/session 200 in 964ms
+ GET /mapa 200 in 34ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 21ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 57ms
+ GET /api/auth/session 200 in 29ms
+ GET /api/auth/session 200 in 12ms
+ GET /mapa 200 in 32ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 27ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 21ms
+ GET /api/auth/session 200 in 23ms
+ GET /api/auth/session 200 in 13ms
+ GET /mapa 200 in 48ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 32ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 23ms
+ GET /api/auth/session 200 in 36ms
+ GET /api/auth/session 200 in 28ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 2.7s (5445 modules)
+ GET /mapa 200 in 193ms
+ ✓ Compiled /_not-found in 473ms (5207 modules)
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 636ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 616ms
+ ✓ Compiled /api/auth/[...nextauth] in 507ms (2735 modules)
+ GET /api/auth/session 200 in 864ms
+ GET /api/auth/session 200 in 8ms
+ GET /mapa 200 in 89ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 64ms
+ ✓ Compiled in 1687ms (5382 modules)
+ ✓ Compiled in 517ms (5382 modules)
+ ✓ Compiled in 1349ms (5382 modules)
+ ✓ Compiled in 533ms (5382 modules)
+ ✓ Compiled in 883ms (5382 modules)
+ GET /mapa 200 in 220ms
+ ✓ Compiled in 1086ms (5204 modules)
+ GET /mapa 200 in 207ms
+ ✓ Compiled in 1270ms (5204 modules)
+ ✓ Compiled in 385ms (5204 modules)
+ ✓ Compiled in 443ms (5204 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 497ms (5204 modules)
+ GET /mapa 200 in 123ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1039ms (5207 modules)
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 1257ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1248ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 1316ms (2735 modules)
+ GET /api/auth/session 200 in 1480ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 673ms (5382 modules)
+ GET /mapa 200 in 531ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 31ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 23ms
+ GET /api/auth/session 200 in 75ms
+ GET /api/auth/session 200 in 11ms
+ ✓ Compiled in 441ms (5382 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /mapa 200 in 211ms
+ GET /_next/static/css/app/bootstrap.min.css.map 404 in 23ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 13ms
+ GET /api/auth/session 200 in 53ms
+ GET /api/auth/session 200 in 9ms
+ GET /mapa 200 in 19ms

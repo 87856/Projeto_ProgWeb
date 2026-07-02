@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zona_voos",
+  "info": {
+    "singularName": "zona-voo",
+    "pluralName": "zona-voos",
+    "displayName": "Zona de Voo",
+    "description": "Zonas de voo para drones (permitidas, restritas ou proibidas)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "enumeration",
+      "required": true,
+      "default": "Permitida",
+      "enum": [
+        "Permitida",
+        "Restrita",
+        "Proibida"
+      ]
+    },
+    "latitude": {
+      "type": "decimal",
+      "required": true
+    },
+    "longitude": {
+      "type": "decimal",
+      "required": true
+    },
+    "raio": {
+      "type": "integer",
+      "default": 1000
+    },
+    "altitudeMax": {
+      "type": "integer"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "zona_de_voos"
+    },
+    "drones": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::drone.drone",
+      "mappedBy": "zona_de_voos"
+    }
+  }
+}
