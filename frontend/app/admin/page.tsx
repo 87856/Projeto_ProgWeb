@@ -40,7 +40,7 @@ export default function AdminDashboard() {
                 Lista, cria, edita e apaga zonas (com relações a utilizadores e drones).
               </Card.Text>
               <Link href="/admin/zonas" className="btn btn-dz-primary">
-                Abrir tabala de zonas →
+                Abrir tabela de zonas →
               </Link>
             </Card.Body>
           </Card>
