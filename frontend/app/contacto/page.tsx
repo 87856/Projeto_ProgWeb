@@ -1,11 +1,5 @@
 "use client";
 
-// =====================================================================
-//  app/contacto/page.tsx — Formulário de contacto (Client Component)
-//  ---------------------------------------------------------------------
-//  Usa React Hook Form. Submissão simulada (não envia a backend).
-// =====================================================================
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Form, Button, Alert } from "react-bootstrap";
